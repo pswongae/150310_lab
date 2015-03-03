@@ -15,7 +15,7 @@ public class User {
 		this.userId = id;
 		this.userName = name;
 		this.userEmail = email;
-		System.out.println(this);
+		//System.out.println(this);
 	}
 	/**
 	 * @return the id

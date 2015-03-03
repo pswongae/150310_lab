@@ -14,7 +14,7 @@ public class Post {
 		super();
 		this.date = date;
 		this.content = content;
-		System.out.println(date);
+		//System.out.println(date);
 	}
 
 	/**
@@ -29,6 +29,14 @@ public class Post {
 	 */
 	public void setContent(String content) {
 		this.content = content;
+	}
+	
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
 	}
 
 	@Override
@@ -101,9 +109,5 @@ public class Post {
 	public boolean contains(String keyword) {
 		return content.contains(keyword);
 	}
-	
-
-	
-	
 
 }
