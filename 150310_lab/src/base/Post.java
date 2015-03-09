@@ -1,7 +1,7 @@
 package base;
 import java.util.Date;
 
-public class Post {
+public class Post implements Comparable<Post>{
 	
 	private Date date;
 	private String content;
@@ -41,7 +41,7 @@ public class Post {
 
 	@Override
 	public String toString() {
-		return getContent();
+		return getDate() + "\n" + getContent();
 	}
 	/**
 	 * @param arg0
@@ -108,6 +108,12 @@ public class Post {
 	 */
 	public boolean contains(String keyword) {
 		return content.contains(keyword);
+	}
+
+	@Override
+	public int compareTo(Post p) {
+		// TODO Auto-generated method stub
+		return this.getDate().compareTo(p.getDate());
 	}
 
 }

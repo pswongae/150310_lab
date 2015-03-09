@@ -1,6 +1,6 @@
 package base;
 
-public class User {
+public class User implements Comparable<User>{
 	
 	private int userId;
 	private String userName;
@@ -99,6 +99,16 @@ public class User {
 	public String toString() {
 		return "User [userId=" + userId + ", userName=" + userName
 				+ ", userEmail=" + userEmail + "]";
+	}
+	@Override
+	public int compareTo(User u) {
+		// TODO Auto-generated method stub
+		if (this.getId() > u.getId())
+			return 1;
+		else if (this.getId() < u.getId())
+			return -1;
+		else 
+			return 0;
 	}
 	
 	

@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Date;
 
 import base.*;
+import blog.Blog;
 
 public class TestBlog {
 
